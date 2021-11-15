@@ -1,0 +1,94 @@
+body{
+	margin: 100px;
+	font-family: Tahoma, Verdana, sans-serif;
+	text-align: center;
+	background-color: #B0C4DE;
+	background-size: cover;	
+}
+input{
+	background-color: black;
+	color: #B0C4DE;
+	font-size: 16px;
+	padding: 5px;
+}
+
+* {
+	box-sizing: border-box
+}
+
+.wrapper{
+	max-width: 1000px;
+	margin: 80px auto;
+}
+header{
+	background: url('../picture/background.png') no-repeat;
+	height: 360px;	
+}
+footer{
+	position: center;
+	background-color: #778899;
+}
+footer p{
+	text-align: center;
+	color: white;
+}
+p{
+	text-align: justify;
+	text-indent: 2em;
+}
+h4{
+	text-align: left;
+}
+
+table, th, td, tr {
+	border: 1px solid black;
+}
+nav{
+	background: #778899;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+}
+nav::after{
+	content:'';
+	clear: both;
+	display: table;
+}
+nav a{
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+	display: block;
+}
+nav a:hover {
+	background: rgba(0,0,0,.8)
+}
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+nav>ul>li{
+	float: left;
+}
+
+nav .has-submenu{
+	position: relative
+}
+nav .has-submenu:hover .submenu{
+	display: block;
+}
+nav::has-submenu::after{
+	content: '🢗';
+	color: white;
+	position: absolute;
+	top: 23px;
+	right: 10px;
+}
+nav .submenu{
+	position: absolute
+	width: 300px;
+	display: none;"
+}
